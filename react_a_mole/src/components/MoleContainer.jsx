@@ -1,12 +1,13 @@
 import Mole from './Mole'
 import EmptySlot from './EmptySlot'
+import {useState} from 'react'
 
 
 
 
 function MoleContainer(props) {
-    let [displayMole, setDisplayMole] = usesState(false)
-    function handleClick(e){
+    let [displayMole, setDisplayMole] = useState(false)
+    function handleClick(){
         props.setScore(props.score +1)
         setDisplayMole(false)
     }

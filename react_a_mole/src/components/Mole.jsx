@@ -13,7 +13,7 @@ const Mole = (props) => {
 
     return (
         <div>
-            <img style={{'width': '30vw'}} src={moleImg} onClick={props.handleClick} />
+            <img style={{'width': '30vw'}} src={moleImg} alt="" onClick={props.handleClick} />
         </div>
     )
 }
